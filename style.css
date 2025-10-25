@@ -12,6 +12,12 @@ body {
     height: 15vw;
 
 }
+.dr-img:hover{
+    box-shadow: 5px 5px 15px black;
+}
+.dr-img:hover ~ .dr-description{
+    opacity: 100%;
+}
 
 .dr-img {
     border: 1px black solid;
@@ -28,6 +34,18 @@ header {
     justify-content: end;
     text-align: end;
     gap: 3vw;
+    position: relative;
+}
+.dr-description{
+    opacity: 0%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius: 5vw;
+    padding: 0 3vw;
+    transition: all 0.5s linear;
+    font-size: 3vw;
 }
 
 main {
