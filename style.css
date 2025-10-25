@@ -46,7 +46,7 @@ header {
     box-shadow: 0 0 10px black;
     border-radius: 5vw;
     padding: 0 3vw;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     font-size: 3vw;
 }
 
