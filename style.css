@@ -82,6 +82,8 @@ main {
     border: none;
     color: white;
     background-color: rgb(89, 6, 255);
+    transition: all 0.3s linear;
+
 }
 
 .rating {
@@ -167,6 +169,11 @@ main {
     height: 36vw;
     background-color: rgb(155, 255, 155);
     border-radius: 8vw;
+    box-shadow: 0 0 10PX rgb(0, 0, 0);
+}
+
+.patients:hover {
+    box-shadow: 0 0 10PX green;
 }
 
 .patients img {
@@ -191,7 +198,11 @@ main {
     height: 36vw;
     background-color: rgb(194, 137, 255);
     border-radius: 8vw;
+    box-shadow: 0 0 10PX rgb(0, 0, 0);
+}
 
+.exp:hover {
+    box-shadow: 0 0 10PX purple;
 }
 
 .exp img {
@@ -208,7 +219,11 @@ main {
     height: 36vw;
     background-color: rgb(99, 242, 255);
     border-radius: 8vw;
+    box-shadow: 0 0 10PX rgb(0, 0, 0);
+}
 
+.OT:hover {
+    box-shadow: 0 0 10PX blue;
 }
 
 .OT img {
@@ -225,7 +240,12 @@ main {
     height: 36vw;
     background-color: rgb(255, 239, 134);
     border-radius: 8vw;
+    box-shadow: 0 0 10PX rgb(0, 0, 0);
 
+}
+
+.certificat:hover {
+    box-shadow: 0 0 10PX orange;
 }
 
 .certificat img {
@@ -239,4 +259,31 @@ main {
     border: none;
     color: white;
     background-color: rgb(89, 6, 255);
+    transition: all 0.3s linear;
+}
+
+.appointment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    color: rgb(89, 6, 255);
+}
+
+.appointment:active {
+    transform: translateY(0px);
+    box-shadow: none;
+
+}
+
+.dr-info button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    color: rgb(89, 6, 255);
+}
+
+.dr-info button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+
 }
