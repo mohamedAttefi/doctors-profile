@@ -47,7 +47,7 @@
                 <span class="dr-name">Dr.Terry Aminoff</span>
                 <span class="dr-type">Neurologist Specialist</span>
             </div>
-            <button class="button" onclick="request()">Request</button>
+            <button class="button" id="appointment">Request</button>
         </section>
         <section>
             <div class="rating">
@@ -89,10 +89,19 @@
                 <span id="acheivment">Certificate Acheived</span>
             </div>
         </section>
-        <button class="appointment" onclick="request()">Request for Appointment</button>
+        <button class="appointment" id="appointment">Request for Appointment</button>
     </main>
-    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("appointment").addEventListener('click', () => {
+            Swal.fire({
+                title: 'Appointment Request',
+                text: 'Please contact our reception to book your appointment.',
+                icon: 'info',
+                confirmButtonText: 'Okay'
+            });
+        });
+    </script>
 </body>
 
 </html>
