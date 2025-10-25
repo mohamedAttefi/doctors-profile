@@ -1,0 +1,242 @@
+body {
+    padding: 5vw 5vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.dr-img img {
+    width: 15vw;
+    height: 15vw;
+
+}
+
+.dr-img {
+    border: 1px black solid;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 10vw;
+    overflow: hidden;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    text-align: end;
+    gap: 3vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.dr-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.work-time {
+    color: rgb(71, 71, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+}
+
+.dr-profile {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5.5vw;
+}
+
+.dr-info {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.dr-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dr-name {
+    font-size: 7VW;
+}
+
+.dr-type {
+    font-size: 3.5VW;
+    color: gray;
+}
+
+.dr-info button {
+    font-size: 4VW;
+    padding: 2VW 4vw;
+    border-radius: 3vw;
+    border: none;
+    color: white;
+    background-color: rgb(89, 6, 255);
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+#num-of-stars {
+    font-size: 5.5vw;
+}
+
+#patients-reviews {
+    font-size: 3.5VW;
+    color: gray;
+}
+
+.stars {
+    font-size: 4vw;
+}
+
+.communication {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video img {
+    width: 12vw;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    padding: 2vw 7vw;
+    border-radius: 10vw;
+    background-color: rgb(198, 238, 255);
+}
+
+.appel img {
+    width: 12vw;
+
+}
+
+.appel {
+    display: flex;
+    align-items: center;
+    padding: 2vw 7vw;
+    border-radius: 10vw;
+    background-color: rgb(198, 255, 217);
+}
+
+.message img {
+    width: 12vw;
+
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 2vw 7vw;
+    border-radius: 10vw;
+    background-color: rgb(212, 198, 255);
+}
+
+.cards {
+    align-self: center;
+    width: 80vw;
+    height: 80vw;
+    display: grid;
+    grid-template: repeat(2, 40vw)/repeat(2, 40vw);
+    justify-items: center;
+    align-items: center;
+}
+
+.patients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 36vw;
+    height: 36vw;
+    background-color: rgb(155, 255, 155);
+    border-radius: 8vw;
+}
+
+.patients img {
+    width: 15vw;
+}
+
+#numbers {
+    font-size: 7vw;
+}
+
+#acheivment {
+    font-size: 3vw;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 36vw;
+    height: 36vw;
+    background-color: rgb(194, 137, 255);
+    border-radius: 8vw;
+
+}
+
+.exp img {
+    width: 15vw;
+}
+
+.OT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 36vw;
+    height: 36vw;
+    background-color: rgb(99, 242, 255);
+    border-radius: 8vw;
+
+}
+
+.OT img {
+    width: 15vw;
+}
+
+.certificat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 36vw;
+    height: 36vw;
+    background-color: rgb(255, 239, 134);
+    border-radius: 8vw;
+
+}
+
+.certificat img {
+    width: 15vw;
+}
+
+.appointment {
+    font-size: 4vw;
+    height: 13vw;
+    border-radius: 3vw;
+    border: none;
+    color: white;
+    background-color: rgb(89, 6, 255);
+}
