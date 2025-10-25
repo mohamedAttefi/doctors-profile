@@ -82,7 +82,7 @@ main {
     border: none;
     color: white;
     background-color: rgb(89, 6, 255);
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
 
 }
 
@@ -169,11 +169,15 @@ main {
     height: 36vw;
     background-color: rgb(155, 255, 155);
     border-radius: 8vw;
-    box-shadow: 0 0 10PX rgb(0, 0, 0);
+    box-shadow: 0 0 10PX #000000;
+    transition: all 0.4s linear;
 }
 
 .patients:hover {
     box-shadow: 0 0 10PX green;
+    background-color: white;
+    border-radius: 5vw;
+
 }
 
 .patients img {
@@ -199,10 +203,14 @@ main {
     background-color: rgb(194, 137, 255);
     border-radius: 8vw;
     box-shadow: 0 0 10PX rgb(0, 0, 0);
+    transition: all 0.4s linear;
+
 }
 
 .exp:hover {
     box-shadow: 0 0 10PX purple;
+    background-color: white;
+    border-radius: 5vw;
 }
 
 .exp img {
@@ -220,10 +228,14 @@ main {
     background-color: rgb(99, 242, 255);
     border-radius: 8vw;
     box-shadow: 0 0 10PX rgb(0, 0, 0);
+    transition: all 0.4s linear;
+
 }
 
 .OT:hover {
     box-shadow: 0 0 10PX blue;
+    background-color: white;
+    border-radius: 5vw;
 }
 
 .OT img {
@@ -241,11 +253,15 @@ main {
     background-color: rgb(255, 239, 134);
     border-radius: 8vw;
     box-shadow: 0 0 10PX rgb(0, 0, 0);
+    transition: all 0.4s linear;
+
 
 }
 
 .certificat:hover {
     box-shadow: 0 0 10PX orange;
+    background-color: white;
+    border-radius: 5vw;
 }
 
 .certificat img {
@@ -259,7 +275,8 @@ main {
     border: none;
     color: white;
     background-color: rgb(89, 6, 255);
-    transition: all 0.3s linear;
+    transition: all 0.4s ease-in;
+
 }
 
 .appointment:hover {
@@ -286,4 +303,296 @@ main {
     transform: translateY(0px);
     box-shadow: none;
 
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 5vw 5vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .dr-img img {
+        width: 15vw;
+        height: 15vw;
+
+    }
+
+    .dr-img {
+        border: 1px black solid;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 10vw;
+        overflow: hidden;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        text-align: end;
+        gap: 3vw;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10vw;
+    }
+
+    .dr-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .work-time {
+        color: rgb(71, 71, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vw;
+    }
+
+    .dr-profile {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 4.5vw;
+    }
+
+    .dr-info {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .dr-info div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dr-name {
+        font-size: 6VW;
+    }
+
+    .dr-type {
+        font-size: 2.5VW;
+        color: gray;
+    }
+
+    .dr-info button {
+        font-size: 3VW;
+        padding: 2VW 4vw;
+        border-radius: 3vw;
+        border: none;
+        color: white;
+        background-color: rgb(89, 6, 255);
+        transition: all 0.3s linear;
+
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    #num-of-stars {
+        font-size: 4.5vw;
+    }
+
+    #patients-reviews {
+        font-size: 2.5VW;
+        color: gray;
+    }
+
+    .stars {
+        font-size: 3vw;
+    }
+
+    .communication {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .video img {
+        width: 11vw;
+    }
+
+    .video {
+        display: flex;
+        align-items: center;
+        padding: 2vw 7vw;
+        border-radius: 10vw;
+        background-color: rgb(198, 238, 255);
+    }
+
+    .appel img {
+        width: 11vw;
+
+    }
+
+    .appel {
+        display: flex;
+        align-items: center;
+        padding: 2vw 7vw;
+        border-radius: 10vw;
+        background-color: rgb(198, 255, 217);
+    }
+
+    .message img {
+        width: 11vw;
+
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+        padding: 2vw 7vw;
+        border-radius: 10vw;
+        background-color: rgb(212, 198, 255);
+    }
+
+    .cards {
+        align-self: center;
+        width: 80vw;
+        height: 80vw;
+        display: grid;
+        grid-template: repeat(2, 40vw)/repeat(2, 40vw);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .patients {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35vw;
+        height: 35vw;
+        background-color: rgb(155, 255, 155);
+        border-radius: 8vw;
+        box-shadow: 0 0 10PX rgb(0, 0, 0);
+    }
+
+    .patients:hover {
+        box-shadow: 0 0 10PX green;
+    }
+
+    .patients img {
+        width: 14vw;
+    }
+
+    #numbers {
+        font-size: 6vw;
+    }
+
+    #acheivment {
+        font-size: 2vw;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35vw;
+        height: 35vw;
+        background-color: rgb(194, 137, 255);
+        border-radius: 8vw;
+        box-shadow: 0 0 10PX rgb(0, 0, 0);
+    }
+
+    .exp:hover {
+        box-shadow: 0 0 10PX purple;
+    }
+
+    .exp img {
+        width: 14vw;
+    }
+
+    .OT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35vw;
+        height: 35vw;
+        background-color: rgb(99, 242, 255);
+        border-radius: 8vw;
+        box-shadow: 0 0 10PX rgb(0, 0, 0);
+    }
+
+    .OT:hover {
+        box-shadow: 0 0 10PX blue;
+    }
+
+    .OT img {
+        width: 14vw;
+    }
+
+    .certificat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 35vw;
+        height: 35vw;
+        background-color: rgb(255, 239, 134);
+        border-radius: 8vw;
+        box-shadow: 0 0 10PX rgb(0, 0, 0);
+
+    }
+
+    .certificat:hover {
+        box-shadow: 0 0 10PX orange;
+    }
+
+    .certificat img {
+        width: 14vw;
+    }
+
+    .appointment {
+        font-size: 4vw;
+        height: 13vw;
+        border-radius: 3vw;
+        border: none;
+        color: white;
+        background-color: rgb(89, 6, 255);
+        transition: all 0.3s linear;
+    }
+
+    .appointment:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 10px black;
+        background-color: white;
+        color: rgb(89, 6, 255);
+    }
+
+    .appointment:active {
+        transform: translateY(0px);
+        box-shadow: none;
+
+    }
+
+    .dr-info button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 10px black;
+        background-color: white;
+        color: rgb(89, 6, 255);
+    }
+
+    .dr-info button:active {
+        transform: translateY(0px);
+        box-shadow: none;
+
+    }
 }
