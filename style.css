@@ -17,6 +17,7 @@ body {
 }
 .dr-img:hover ~ .dr-description{
     opacity: 100%;
+    z-index: 2;
 }
 
 .dr-img {
@@ -38,6 +39,7 @@ header {
 }
 .dr-description{
     opacity: 0%;
+    z-index: -1;
     position: absolute;
     background-color: rgb(255, 255, 255);
     top: 100%;
@@ -93,7 +95,7 @@ main {
     color: gray;
 }
 
-.dr-info button {
+.button {
     font-size: 4VW;
     padding: 2VW 4vw;
     border-radius: 3vw;
@@ -102,6 +104,17 @@ main {
     background-color: rgb(89, 6, 255);
     transition: all 0.4s linear;
 
+}
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    color: rgb(89, 6, 255);
+}
+
+.button:active {
+    transform: translateY(0px);
+    box-shadow: none;
 }
 
 .rating {
@@ -310,18 +323,7 @@ main {
 
 }
 
-.dr-info button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 0px 10px black;
-    background-color: white;
-    color: rgb(89, 6, 255);
-}
 
-.dr-info button:active {
-    transform: translateY(0px);
-    box-shadow: none;
-
-}
 
 @media (min-width: 1024px) {
     body {
@@ -401,7 +403,7 @@ main {
         color: gray;
     }
 
-    .dr-info button {
+    .button {
         font-size: 3VW;
         padding: 2VW 4vw;
         border-radius: 3vw;
@@ -601,14 +603,14 @@ main {
 
     }
 
-    .dr-info button:hover {
+    .button:hover {
         transform: translateY(-2px);
         box-shadow: 0px 0px 10px black;
         background-color: white;
         color: rgb(89, 6, 255);
     }
 
-    .dr-info button:active {
+    .button:active {
         transform: translateY(0px);
         box-shadow: none;
 
